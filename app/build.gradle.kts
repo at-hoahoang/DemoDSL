@@ -6,6 +6,7 @@ plugins {
 
 android {
     compileSdkVersion(28)
+
     defaultConfig {
         applicationId = "com.example.demodsl"
         minSdkVersion(19)
@@ -14,11 +15,7 @@ android {
         versionName = "1.0"
         testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
     }
-    signingConfigs {
-        create("staging") {
 
-        }
-    }
     buildTypes {
         getByName("release") {
             isMinifyEnabled = false
